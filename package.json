@@ -1,52 +1,55 @@
 {
-  "name": "reacts-forms",
-  "version": "0.0.4",
-  "description": "form logic abstraction on top of redux-form",
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "jsnext:main": "es/index.js",
-  "scripts": {
-    "clean": "rimraf dist es",
-    "lint": "eslint src",
-    "test": "echo \"Error: no test specified\"",
-    "build": "npm run build:commonjs && npm run build:es",
-    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
-    "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
-    "prepublish": "npm run clean && npm run test",
-    "publish": "npm run prepublish && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AMS-Sigura/reacts-forms/reacts.git"
-  },
-  "author": "Kevin Hendrickx",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AMS-Sigura/reacts-forms/issues"
-  },
-  "homepage": "https://github.com/AMS-Sigura/reacts-forms#readme",
-  "peerDependencies": {
-    "react": "^15.3.0",
-    "react-redux": "^4.3.0",
-    "redux": "^3.0.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.10.1",
-    "babel-core": "^6.9.1",
-    "babel-eslint": "^6.0.4",
-    "babel-polyfill": "^6.9.1",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-es2016": "^6.0.11",
-    "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "babel-register": "^6.14.0",
-    "cross-env": "^2.0.1",
-    "eslint": "^3.5.0",
-    "eslint-plugin-react": "^5.2.2",
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0",
-    "react-redux": "^4.4.5",
-    "redux": "^3.6.0",
-    "rimraf": "^2.5.4"
-  }
+    "name": "reacts-forms",
+    "version": "0.0.4",
+    "description": "form logic abstraction on top of redux-form",
+    "main": "lib/index.js",
+    "module": "es/index.js",
+    "jsnext:main": "es/index.js",
+    "scripts": {
+        "clean": "rimraf dist es",
+        "lint": "eslint src",
+        "test": "echo \"Error: no test specified\"",
+        "build": "npm run build:commonjs && npm run build:es",
+        "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+        "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
+        "prepublish": "npm run clean && npm run test",
+        "publish": "npm run prepublish && npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AMS-Sigura/reacts-forms/reacts.git"
+    },
+    "author": "Kevin Hendrickx",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/AMS-Sigura/reacts-forms/issues"
+    },
+    "homepage": "https://github.com/AMS-Sigura/reacts-forms#readme",
+    "dependencies": {
+        "redux-form": "^6.0.2",
+    },
+    "peerDependencies": {
+        "react": "^15.3.0",
+        "react-redux": "^4.3.0",
+        "redux": "^3.0.0"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.10.1",
+        "babel-core": "^6.9.1",
+        "babel-eslint": "^6.0.4",
+        "babel-polyfill": "^6.9.1",
+        "babel-preset-es2015": "^6.9.0",
+        "babel-preset-es2016": "^6.0.11",
+        "babel-preset-react": "^6.5.0",
+        "babel-preset-stage-0": "^6.5.0",
+        "babel-register": "^6.14.0",
+        "cross-env": "^2.0.1",
+        "eslint": "^3.5.0",
+        "eslint-plugin-react": "^5.2.2",
+        "react": "^15.3.0",
+        "react-dom": "^15.3.0",
+        "react-redux": "^4.4.5",
+        "redux": "^3.6.0",
+        "rimraf": "^2.5.4"
+    }
 }
