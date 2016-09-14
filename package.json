@@ -9,8 +9,8 @@
     "clean": "rimraf dist es",
     "lint": "eslint src",
     "test": "echo \"Error: no test specified\"",
-    "build": "npm run build:es",
-    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "build": "npm run build:lib && npm run build:es",
+    "build:lib": "cross-env babel src --out-dir lib",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
     "prepublish": "npm run clean && npm run test",
     "publish": "npm run prepublish && npm run build"

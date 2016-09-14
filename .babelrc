@@ -6,17 +6,5 @@
         "es2016",
         "stage-0"
     ],
-    "plugins": ["transform-object-rest-spread"],
-    "env": {
-        "commonjs": {
-            "plugins": [
-                ["transform-es2015-modules-commonjs", {
-                    "loose": true
-                }]
-            ]
-        },
-        "es": {
-            "plugins": []
-        }
-    }
+    "plugins": ["transform-object-rest-spread"]
 }
