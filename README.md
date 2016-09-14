@@ -8,3 +8,7 @@ De componenten zijn dus niet te stylen.
 
 De module maakt gebruik van redux.
 Plaats de reducer in {form:formreducer};
+
+---
+
+Error met building voor commonjs. We laten dit dus even achterwege

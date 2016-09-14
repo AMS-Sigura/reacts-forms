@@ -4,7 +4,7 @@ import {Field as ReduxField} from 'redux-form';
 // TODO rechtstreeks connect met redux.
 const Field = props =>
     <div>
-        <ReduxField name={props.name} component={ ({ input, label, meta: { touched, error }, children }) => <div></div>} />
+        <ReduxField name={props.name} component={FieldContainer} />
     </div>;
 
 const FieldContainer = props =>
