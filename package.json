@@ -1,6 +1,6 @@
 {
   "name": "reacts-forms",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "form logic abstraction on top of redux-form",
   "main": "lib/index.js",
   "module": "es/index.js",
